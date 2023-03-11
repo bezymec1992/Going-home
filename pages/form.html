@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="stylesheet" href="../styles/resets.css">
+    <link rel="stylesheet" href="../styles/basic-style.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../img/page_img.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+
+    <div class="form-frapper">
+        <form action="" class="form">
+                <img class="cross-form" src="../img/cross-form.svg" alt="cross" width="18" height="18">
+            <h2 class="form__title title-small">
+                Get in touch
+            </h2>
+            <div class="checkboxes">
+                <h3 class="form__subtitle">
+                    I am interested in
+                </h3>
+                <div class="custom-checkboxes">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="collaboration">
+                        <span class="fake-checkbox"></span>
+                        <label for="collaboration">Collaboration</label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="info">
+                        <span class="fake-checkbox"></span>
+                        <label for="info">More info</label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="other">
+                        <span class="fake-checkbox"></span>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs">
+                <input type="text" name="name" id="name" placeholder="Your name" pattern="[A-Za-z]{1,32}" required>
+                <input type="text" name="company" id="company" placeholder="Company name" pattern="[A-Za-z]{1,32}" required>
+                <input type="tel" name="phone" id="phone" placeholder="Phone number" pattern="[0-9]{10}" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <div class="textareaa">
+                    <textarea name="textarea" class="textarea" maxlength="500"
+                    rows="5" cols="30"
+                    placeholder="Your message"></textarea>
+                    <span class="result">10</span>
+                </div>
+                
+            </div>
+            <button type="submit" class="form__btn">
+                Send
+            </button>
+        </form>
+    </div>
+    
+    <script src="../limit.js"></script>
+</body>
+</html>

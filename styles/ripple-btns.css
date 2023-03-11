@@ -1,0 +1,112 @@
+.button {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+.button::after {
+    content: "";
+    background-color: #1da4f1;
+    border-radius: 50%;
+    transition: width 1s ease, height 1s ease;
+   
+
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    z-index: -11;
+
+}
+
+.button:hover::after {
+    height: 650px;
+    width: 650px;
+    color: aliceblue;
+
+}
+/****ripple-btn***/
+
+
+.ripple-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.ripple-btn {
+    width: 320px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+}
+.first__btn {
+    background: #EDF1F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -7px 7px #F4F4F4;
+    margin-right: 35px;
+}
+
+.second__btn {
+    background: #0084CF;
+    border: 2px solid #0084CF;
+    box-shadow: 0px 0px 40px rgba(0, 132, 207, 0.35);
+}
+
+.second__btn-text {
+    margin-right: 20px;
+    color: white;
+}
+
+.first__btn-text {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.ripple-text-mb {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .ripple-btns {
+        width: 335px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 120px auto 0;
+        
+    }
+
+    .ripple-arrow-left {
+        width: 30px;
+        height: 10px;
+    }
+
+    .first__btn {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ripple-btn {
+        width: 335px;
+        height: 60px;
+    }
+
+    .ripple-arrow-right {
+        width: 30px;
+        height: 20px;
+    }
+
+    .ripple-text-mb {
+        display: block;
+    }
+
+    .ripple-text-desk {
+        display: none;
+    }
+}

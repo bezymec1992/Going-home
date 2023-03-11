@@ -1,0 +1,159 @@
+@import 'forms.css';
+@import 'footer2.css';
+
+.body {
+  background: #E5E5E5;
+}
+
+.privacy-policy {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .privacy-policy {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.privacy__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .privacy__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+}
+     
+.privacy-a {
+  /* font-weight: 700; */
+  color: black;
+  text-decoration: unset;
+  }
+  
+.privacy-text {
+  margin-bottom: 3rem;
+}
+@media (max-width: 992px) {
+  .privacy-text {
+    margin-bottom: 2rem;
+  }
+}
+.privacy-wrapp {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .privacy-wrapp {
+    padding-top: 40px;
+    display: block !important;
+  }
+}
+.privacy-subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 100%;
+  width:  400px;
+  padding-right: 2rem;
+}
+@media (max-width: 992px) {
+  .privacy-subtitle {
+    margin-bottom: 2rem;
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+
+
+.privecy-text-descr {
+  max-width: 690px;
+  width:  100%;
+}
+.privecy-text-descr p {
+  
+  padding-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .privecy-text-descr p {
+    padding-bottom: 20px;
+    /* font-size: 14px; */
+    line-height: 28px;
+  }
+}
+.ul-p {
+  padding-bottom: 2rem;
+}
+
+.ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .privacy-text  {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+/***foooter***/
+.footer2 {
+  background: transparent;
+  border-top: 1px solid #8d8d8d;
+
+}
+
+.footer2__text {
+  color: black;
+  opacity: 0.5;
+}
+
+.footer2__subtitle {
+  color: black;
+}
+  
+.footer2__link {
+  color: black;
+}
+
+.footer2__logo {
+  color: black;
+}
+
+.footer2__emali {
+  color: black;
+}
+
+.terms__text { 
+  color: black;
+}
+
+.footer__get {
+  background: #0084CF;
+  color: white;
+}
+
+.footer__get:hover {
+  color: white;
+  background-color: #005c91;
+}

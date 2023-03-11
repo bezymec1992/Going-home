@@ -1,0 +1,235 @@
+.form-wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #E5E5E5; */
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -10000;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ease 0.3s;
+}
+
+.open-form {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 10000;
+}
+
+.form {
+    width: 875px;
+    max-width: 100%;
+    height: 529px;
+    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+    background-color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cross-form {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+.form__title {
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #073279;
+}
+
+.inputs input {
+    background: #EDF1F2;
+    border-radius: 25px;
+    width: 390px;
+    max-width: 100%;
+    height: 48px;
+    padding-left: 25px;
+
+    margin-bottom: 15px;
+}
+
+textarea {
+    background: #EDF1F2;
+    border-radius: 25px;
+    padding: 16px 24px;
+    width: 795px;
+    max-width: 100%;
+    height: 122px;
+    resize: none;
+}
+
+.form__btn {
+    width: 200px;
+    height: 50px;
+    background: #0084CF;
+    border: 2px solid #0084CF;
+    border-radius: 30px;
+    color: white;
+    margin-top: 24px;
+    transition: ease 0.5s;
+}
+
+.form__btn:hover {
+    color: #0084CF;
+    background-color: white;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.form__subtitle {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 46px;
+    color: #073279;
+}
+
+
+
+/*******checkbox custom*******/
+.custom-checkbox {
+    position: relative;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.custom-checkbox .fake-checkbox {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.custom-checkbox .fake-checkbox:after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.custom-checkbox label {
+    padding-top: 4px;
+    display: flex;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 50px;
+    position: relative;
+    z-index: 2;
+    max-width: 419px;
+    cursor: pointer;
+}
+
+.custom-checkbox input:checked ~ .fake-checkbox:after {
+    background: #0084CF; 
+}
+
+.custom-checkboxes {
+    display: flex;
+    align-items: center;
+}
+
+.textareaa {
+    position: relative;
+}
+
+.result {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.4;
+}
+
+
+@media (max-width: 900px) {
+    .form {
+        width: 335px;
+        height: 681px;
+        border-radius: 20px;
+        padding: 32px 24px;
+    }
+
+    .form__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .checkboxes {
+        flex-wrap: wrap;
+    }
+
+    .form__subtitle {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .custom-checkbox {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .custom-checkboxes {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .custom-checkbox label {
+        padding-left: 30px;
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    .custom-checkbox .fake-checkbox:after {
+        width: 16px;
+        height: 16px;
+    }
+
+    .custom-checkbox .fake-checkbox {
+        width: 22px;
+        height: 22px;
+    }
+
+    .form__btn {
+        display: block;
+        margin: 24px auto 0;
+    }
+    input, .textarea {
+        font-size: 14px;
+    }
+}
+
